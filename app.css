@@ -1,0 +1,122 @@
+body {
+  font-family: "Poppins", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+h2 {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+header {
+  color: #393e46;
+  display: flex;
+  flex-direction: row;
+  background-color: #929aab;
+}
+header h1 {
+  flex: 2;
+  margin: 20px;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  flex-direction: column;
+  align-items: center;
+
+  position: sticky;
+  top: 0;
+}
+nav li {
+  display: inline;
+  margin: 20px;
+}
+
+nav a {
+  color: #393e46;
+  font-size: 18px;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #f7f7f7;
+  font-size: 18px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+main {
+  overflow: auto;
+  display: flex;
+  flex-direction: row;
+}
+
+.content {
+  flex: 2;
+  margin: 20px;
+}
+article p {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.featured-image {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  object-position: centenr;
+}
+
+aside {
+  flex: 1;
+  margin-top: 110px;
+}
+aside h2,
+.profile-description {
+  margin: 20px;
+}
+
+.profile-description {
+  font-weight: 200;
+}
+
+.card {
+  background-color: #eeeeee;
+  padding: 10px;
+}
+.profil {
+  width: 200px;
+  height: 200px;
+}
+
+figure {
+  text-align: center;
+}
+
+footer {
+  color: #f7f7f7;
+  padding: 20px;
+  font-size: 18px;
+  text-align: center;
+  background-color: #393e46;
+}
+@media only screen and (max-width: 600px) {
+  h1 {
+    font-size: 24px;
+  }
+  header {
+    flex-direction: column;
+  }
+  nav {
+    display: none !important;
+  }
+  main {
+    flex-direction: column;
+  }
+}
